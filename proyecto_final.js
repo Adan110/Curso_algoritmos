@@ -22,35 +22,41 @@ do{
 function reservar(){
     do{
         var num_mesa = prompt("Ingrese el numero de mesa a reservar");
-       
+        var nombre = prompt("Ingresa tu nombre");
+        var horario = prompt("Ingresa el horario");
+        var personas = prompt("Ingresa la cantiad de personas que asistiran");
         
         switch(num_mesa){
             case "1":
                 m1 = mesa1(nombre, horario, personas);
-                if(m1 == mesa1(nombre, horario, personas)){
-                    alert("Esta mesa ya a sido reservada");
-                }
-                var nombre = prompt("Ingresa tu nombre");
-                var horario = prompt("Ingresa el horario");
-                var personas = prompt("Ingresa la cantiad de personas que asistiran");
                 console.log(m1);
                 alert("Su reservacion se competo de forma correcta");
-            break;
+                break;
             case "2":
-                m2 = mesa2(nombre, horario, personas); 
-            break;
+                m2 = mesa2(nombre, horario, personas);
+                console.log(m2);
+                alert("Su reservacion se competo de forma correcta"); 
+                break;
             case "3":
                 m3 = mesa3(nombre, horario, personas);
-            break;
+                console.log(m3);
+                alert("Su reservacion se competo de forma correcta");
+                break;
             case "4":
                 m4 = mesa4(nombre, horario, personas);
-            break;
+                console.log(m4);
+                alert("Su reservacion se competo de forma correcta");
+                break;
             case "5":
                 m5 = mesa5(nombre, horario, personas);
-            break;
+                console.log(m5);
+                alert("Su reservacion se competo de forma correcta");
+                break;
             case "6":
-                m6 = mesa6(nombre, horario, personas); 
-            break;
+                m6 = mesa6(nombre, horario, personas);
+                console.log(m6);
+                alert("Su reservacion se competo de forma correcta");
+                break;
         }
         var reservar_nuevamente = prompt("Quiere reservar otra esa? SI/NO")
     }while(reservar_nuevamente == "si" || reservar_nuevamente == "SI");
