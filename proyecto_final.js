@@ -13,9 +13,6 @@ do{
         default: alert("Opcion no disponible vuelva a intentar"); break;
     }
 }while(opc != "5");
-console.log(mesas_no_reservadas);
-console.log(mesas_reservadas);
-
 function reservar(){
     var rep = true;
     while (rep == true) {
